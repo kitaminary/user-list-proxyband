@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7822434.chunk.css",
-    "main.js": "/static/js/main.d4b1f51e.chunk.js",
-    "main.js.map": "/static/js/main.d4b1f51e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.08861662.js",
-    "runtime-main.js.map": "/static/js/runtime-main.08861662.js.map",
-    "static/js/2.e9b34a09.chunk.js": "/static/js/2.e9b34a09.chunk.js",
-    "static/js/2.e9b34a09.chunk.js.map": "/static/js/2.e9b34a09.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.d7822434.chunk.css.map": "/static/css/main.d7822434.chunk.css.map",
-    "static/js/2.e9b34a09.chunk.js.LICENSE.txt": "/static/js/2.e9b34a09.chunk.js.LICENSE.txt"
+    "main.css": "/user-list-proxyband/static/css/main.d7822434.chunk.css",
+    "main.js": "/user-list-proxyband/static/js/main.d4b1f51e.chunk.js",
+    "main.js.map": "/user-list-proxyband/static/js/main.d4b1f51e.chunk.js.map",
+    "runtime-main.js": "/user-list-proxyband/static/js/runtime-main.fc5b800e.js",
+    "runtime-main.js.map": "/user-list-proxyband/static/js/runtime-main.fc5b800e.js.map",
+    "static/js/2.e9b34a09.chunk.js": "/user-list-proxyband/static/js/2.e9b34a09.chunk.js",
+    "static/js/2.e9b34a09.chunk.js.map": "/user-list-proxyband/static/js/2.e9b34a09.chunk.js.map",
+    "index.html": "/user-list-proxyband/index.html",
+    "static/css/main.d7822434.chunk.css.map": "/user-list-proxyband/static/css/main.d7822434.chunk.css.map",
+    "static/js/2.e9b34a09.chunk.js.LICENSE.txt": "/user-list-proxyband/static/js/2.e9b34a09.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.08861662.js",
+    "static/js/runtime-main.fc5b800e.js",
     "static/js/2.e9b34a09.chunk.js",
     "static/css/main.d7822434.chunk.css",
     "static/js/main.d4b1f51e.chunk.js"
