@@ -1,23 +1,34 @@
 /* eslint-disable import/extensions */
 import { configureStore, createReducer } from '@reduxjs/toolkit';
 import {
-  SetM,
+  setActiveModal,
+  setPostsFromServer,
+  setUserAlbums,
+  setUsersFromServer,
 } from './actions';
 // eslint-disable-next-line import/no-unresolved
 import { State } from '../react-app-env';
 
 const initialState: State = {
-  M: [],
+  usersFromServer: [],
+  userAlboums: [],
+  activeModal: false,
+  postsFromServer: [],
 };
 
-const reducer = createReducer(
-  initialState,
-  (builder) => {
-    builder
-      .addCase(SetM, (state, action) => {
-        state.M = action.payload;
-      });
-  },
-);
+const reducer = createReducer(initialState, (builder) => {
+  builder.addCase(setUsersFromServer, (state, action) => {
+    state.usersFromServer = action.payload;
+  });
+  builder.addCase(setUserAlbums, (state, action) => {
+    state.userAlboums = action.payload;
+  });
+  builder.addCase(setActiveModal, (state, action) => {
+    state.activeModal = action.payload;
+  });
+  builder.addCase(setPostsFromServer, (state, action) => {
+    state.postsFromServer = action.payload;
+  });
+});
 
 export const store = configureStore({ reducer });

@@ -1,0 +1,54 @@
+.albums {
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  right: 5%;
+  padding: 10px;
+  position: fixed;
+  background-color: rgb(237, 233, 233);
+  border: 2px solid silver;
+  border-radius: 20px;
+  box-shadow: 1px 5px 5px rgb(108, 108, 108);
+  z-index: 2;
+  visibility: visible;
+  transform: scale(100%);
+  transition: all 0.3s ease-in-out;
+
+  &--active {
+    visibility: hidden;
+    transform: scale(0);
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 800px) {
+  .albums {
+    width: 40%;
+    height: min-content;
+    padding: 10px;
+    position: fixed;
+    left: 50% - 20;
+    top: 10%;
+    visibility: visible;
+    transform: scale(100%);
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+      visibility: hidden;
+      transform: scale(0);
+    }
+    &__box {
+      height: auto;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+}
