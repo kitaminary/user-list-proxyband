@@ -6,6 +6,7 @@ import getAlbums from '../../api/Albums';
 import { UserType } from '../../react-app-env';
 import {
   setActiveModal,
+  setLoader,
   setPostsFromServer,
   setUserAlbums,
 } from '../../store/actions';
@@ -28,6 +29,7 @@ const User: React.FC<Props> = ({ user }) => {
     const postsFromServer = await getPosts(id);
 
     dispatch(setPostsFromServer(postsFromServer));
+    dispatch(setLoader(false));
   };
 
   return (
@@ -76,7 +78,10 @@ const User: React.FC<Props> = ({ user }) => {
           <Link
             to={`/posts=${user.id}`}
             className="button is-info is-outlined m-2"
-            onClick={() => getUserPosts(user.id)}
+            onClick={() => {
+              getUserPosts(user.id);
+              dispatch(setLoader(true));
+            }}
             type="button"
           >
             Show Post

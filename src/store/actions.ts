@@ -16,3 +16,5 @@ export const setActiveModal = createAction<boolean>(
 export const setPostsFromServer = createAction<PostType[]>(
   ActionTypes.SET_PostsFromServer,
 );
+
+export const setLoader = createAction<boolean>(ActionTypes.SET_loader);

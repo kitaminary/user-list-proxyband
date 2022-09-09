@@ -2,6 +2,7 @@
 import { configureStore, createReducer } from '@reduxjs/toolkit';
 import {
   setActiveModal,
+  setLoader,
   setPostsFromServer,
   setUserAlbums,
   setUsersFromServer,
@@ -14,6 +15,7 @@ const initialState: State = {
   userAlboums: [],
   activeModal: false,
   postsFromServer: [],
+  loader: true,
 };
 
 const reducer = createReducer(initialState, (builder) => {
@@ -28,6 +30,9 @@ const reducer = createReducer(initialState, (builder) => {
   });
   builder.addCase(setPostsFromServer, (state, action) => {
     state.postsFromServer = action.payload;
+  });
+  builder.addCase(setLoader, (state, action) => {
+    state.loader = action.payload;
   });
 });
 

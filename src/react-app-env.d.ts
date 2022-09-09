@@ -5,6 +5,7 @@ export interface State {
   userAlboums: AlboumType[];
   activeModal: boolean;
   postsFromServer: PostType[];
+  loader: boolean
 }
 
 export interface UserType {
