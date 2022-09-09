@@ -37,14 +37,7 @@
     position: fixed;
     left: 50% - 20;
     top: 10%;
-    visibility: visible;
-    transform: scale(100%);
-    transition: all 0.3s ease-in-out;
 
-    &--active {
-      visibility: hidden;
-      transform: scale(0);
-    }
     &__box {
       height: auto;
       gap: 10px;

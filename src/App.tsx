@@ -24,17 +24,15 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <main>
-      <Routes>
-        <Route path="/" element={<UserList />} />
-        {users.map((user) => (
-          <Route
-            key={user.id}
-            path={`/posts=${user.id}`}
-            element={<PostList />}
-          />
-        ))}
-      </Routes>
-    </main>
+    <Routes>
+      <Route path="/" element={<UserList />} />
+      {users.map((user) => (
+        <Route
+          key={user.id}
+          path={`/posts=${user.id}`}
+          element={<PostList />}
+        />
+      ))}
+    </Routes>
   );
 };
